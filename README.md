@@ -1,0 +1,1 @@
+# cooperative-coding-convention
