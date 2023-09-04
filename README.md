@@ -57,7 +57,9 @@ Value: wisdomin121, anyl92, SeungrokYoon, 5unk3n, salmontaker, JangHyunjeong
 
 > 모든 커밋 메시지는 `prefix: 메시지`의 형식에 따라 작성해 주세요!
 
-> (예시) `feat: Todo 리스트 구현`
+```
+feat: Todo 리스트 구현
+```
 
 | prefix   | 설명                                                  |
 | -------- | ----------------------------------------------------- |
@@ -75,7 +77,9 @@ Value: wisdomin121, anyl92, SeungrokYoon, 5unk3n, salmontaker, JangHyunjeong
 
 > 브랜치 명은 `prefix/#이슈번호-브랜치이름`으로 작성해 주세요!
 
-> (예시) `feat/#1-todo-list`
+```
+feat/#1-todo-list
+```
 
 ### Issue
 
