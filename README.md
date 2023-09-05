@@ -1,6 +1,20 @@
 # 프리온보딩 7팀 컨벤션
 
-### 브랜치 설정
+## 목차
+
+- [브랜치 설정](#브랜치-설정)
+- [프로젝트 자동화](#프로젝트-자동화)
+- [커밋 메시지](#커밋-메시지)
+- [브랜치 명](#브랜치-명)
+- [Issue](#issue)
+- [Pull Request](#pull-request)
+- [Merge](#merge)
+- [디렉토리 구조](#디렉토리-구조)
+- [변수, 함수, 컴포넌트명칭](#변수-함수-컴포넌트명칭)
+- [Github Actions](#github-actions)
+- [Windows에서 Github Desktop 사용 시](#windows에서-github-desktop-사용-시)
+
+## 브랜치 설정
 
 > 해당 프로젝트의 Settings -> Branches로 이동합니다.
 
@@ -14,7 +28,7 @@
 
 ![4](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/844bd461-4c57-49b4-87c3-66d0af2f19f8)
 
-### 프로젝트 자동화
+## 프로젝트 자동화
 
 > [원활한 자동화](#github-actions)를 위해 다음과 같은 설정을 해주세요!
 
@@ -53,7 +67,7 @@ Name: REVIEWERS
 Value: wisdomin121, anyl92, SeungrokYoon, 5unk3n, salmontaker, JangHyunjeong
 ```
 
-### 커밋 메시지
+## 커밋 메시지
 
 > 모든 커밋 메시지는 `prefix: 메시지`의 형식에 따라 작성해 주세요!
 
@@ -71,7 +85,7 @@ feat: Todo 리스트 구현
 | docs     | README.md등의 문서수정                                |
 | chore    | 불필요한 파일 삭제, 파일 디렉토리 이동 등의 잡다한 일 |
 
-### 브랜치 명
+## 브랜치 명
 
 > [커밋 메시지](#커밋-메시지)의 prefix를 동일하게 사용합니다!
 
@@ -81,7 +95,7 @@ feat: Todo 리스트 구현
 feat/#1-todo-list
 ```
 
-### Issue
+## Issue
 
 > 이슈 작성시 연관된 브랜치를 연결해 주세요!
 
@@ -89,7 +103,7 @@ feat/#1-todo-list
 
 ![브랜치 연결](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/8d417643-2a67-4114-8157-c08f655664c8)
 
-### Pull Request
+## Pull Request
 
 > [커밋 메시지](#커밋-메시지)의 prefix를 동일하게 사용합니다!
 
@@ -112,7 +126,7 @@ git rebase origin/main
 git push -f
 ```
 
-### Merge
+## Merge
 
 > merge전에 rebase, 꼭 잊지 말도록 해요!
 
@@ -123,7 +137,7 @@ git rebase origin/main
 git push -f
 ```
 
-### 디렉토리 구조
+## 디렉토리 구조
 
 > 이 외에도 추가하고 싶은 요소가 있다면, 모두와 의견을 나눠봐요!
 
@@ -159,7 +173,7 @@ src/
         └── fontSize.ts
 ```
 
-### 변수, 함수, 컴포넌트명칭
+## 변수, 함수, 컴포넌트명칭
 
 > 변수와 함수는 반드시 camelCase로 작성해 주세요!
 
@@ -204,7 +218,7 @@ const useTodo = () => {
 }
 ```
 
-### Github Actions
+## Github Actions
 
 > 이슈와 PR 작성시의 피로도를 줄이기 위해, 다음과 같이 자동화를 했어요!
 
@@ -245,3 +259,15 @@ jobs:
           project-url: ${{ vars.PROJECT_URL }}
           github-token: ${{ secrets.TOKEN }}
 ```
+
+## Windows에서 Github Desktop 사용 시
+
+> Windows 버전 [Github Desktop](https://desktop.github.com/)에 내장된 Git에는 [cygpath](https://cygwin.com/cygwin-ug-net/cygpath.html)가 포함되어 있지않아, pre-commit시 다음과 같은 에러가 발생할 수 있습니다.
+
+![Error](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/e74940a4-5290-40fe-be92-d6fdeb072288)
+
+> 이 경우, git이 설치된 경로/usr/bin/cygpath.exe를 GitHub Desktop이 설치된 경로/bin 에 복사하면 해결할 수 있습니다.
+
+![1](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/28b33067-d074-4bc7-bb4e-e320e8afd51d)
+
+![2](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/53c32db5-005a-464d-af81-ef9067fb0173)
