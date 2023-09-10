@@ -2,6 +2,7 @@
 
 ## 목차
 
+- [기본 설정](#기본-설정)
 - [브랜치 설정](#브랜치-설정)
 - [프로젝트 자동화](#프로젝트-자동화)
 - [커밋 메시지](#커밋-메시지)
@@ -13,6 +14,16 @@
 - [변수, 함수, 컴포넌트명칭](#변수-함수-컴포넌트명칭)
 - [Github Actions](#github-actions)
 - [Windows에서 Github Desktop 사용 시](#windows에서-github-desktop-사용-시)
+
+## 기본 설정
+
+> 해당 프로젝트의 Settings -> General로 이동합니다.
+
+![1](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/a4640101-1c99-4874-96e5-1f167653b105)
+
+> Pull Request 항목의 옵션을 다음과 같이 설정합니다.
+
+![2](https://github.com/wanted-pre-onboarding-team-12th-7/cooperative-coding-convention/assets/93248349/3eecaf04-5755-443e-8e9a-d7853116bd51)
 
 ## 브랜치 설정
 
